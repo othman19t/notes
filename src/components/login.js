@@ -44,6 +44,7 @@ class LogIn extends Component {
           <p> {this.state.error} </p>
           <form className="login__form">
             <input
+              type="email"
               className="login__input"
               value={this.state.email}
               onChange={this.handleChange}
@@ -57,6 +58,7 @@ class LogIn extends Component {
               onChange={this.handleChange}
               name="password"
               placeholder="Please type your password"
+              type="password"
             />
             <br></br>
             <button className="login__btn" onClick={this.login}>
