@@ -1,0 +1,19 @@
+@import "mixin";
+@import "vars";
+@import "add";
+@import "viewNotes";
+@import "logout";
+@import "modle";
+@import "login";
+
+html {
+  font-size: 52.5%;
+  font-family: "Roboto", sans-serif;
+  @include respond(bigDis){
+    font-size: 50%;
+  }
+}
+body {
+  padding: 0;
+  margin: 0;
+}

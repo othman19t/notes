@@ -1,0 +1,63 @@
+.add {
+  padding: 0 0 0 10vw;
+  @include respond(dis) {
+    padding: 0px;
+  }
+  overflow: hidden;
+
+  &__input {
+    width: 60vw;
+    height: 6rem;
+    font-size: 2rem;
+    padding-left: 1rem;
+    @include respond(dis) {
+      width: 77vw;
+    }
+    @include respond(bigPhone) {
+      width: 76vw;
+    }
+    @include respond(phone) {
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+    }
+  }
+
+  &__btn {
+    background: $second-blue;
+    height: 6.7rem;
+    width: 20vw;
+    font-size: 3rem;
+    transform: translateY(3.8px);
+    border: solid 0px;
+    cursor: pointer;
+    margin-left: 0.2vw;
+    color: $white;
+    @include respond(bigDis) {
+      transform: translateY(3px);
+    }
+    @include respond(dis) {
+      margin-left: 1.8vw;
+    }
+    @include respond(smallDis) {
+      margin-left: 1.6vw;
+    }
+    @include respond(bigTab) {
+      margin-left: 1.3vw;
+    }
+    @include respond(tab) {
+      width: 19.5vw;
+    }
+    @include respond(smalltab) {
+      width: 19.3vw;
+      font-size: 2.4rem;
+    }
+    @include respond(bigPhone) {
+      font-size: 2rem;
+    }
+    @include respond(phone) {
+      width: 100vw;
+      margin-left: 0;
+    }
+  }
+}

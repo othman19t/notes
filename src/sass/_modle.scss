@@ -1,0 +1,90 @@
+.modle {
+  width: 100vw;
+  height: 100vh;
+  background: $second-blue;
+  position: absolute;
+  top: 0rem;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include respond(smalltab) {
+    flex-direction: column;
+  }
+  &__form {
+    @include respond(smalltab) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__input {
+    width: 60vw;
+    height: 6rem;
+    font-size: 2rem;
+    padding-left: 1rem;
+    @include respond(smalltab) {
+      width: 90vw;
+    }
+  }
+  &__btn {
+    width: 20vw;
+    height: 6.6rem;
+    margin-left: 1rem;
+    transform: translateY(0.3rem);
+    background: $main-blue;
+    font-size: 3rem;
+    color: $white;
+    cursor: pointer;
+    border: solid 0px;
+    @include respond(bigTab) {
+      font-size: 2.5rem;
+      transform: translateY(0.2rem);
+    }
+    @include respond(tab) {
+      font-size: 2.1rem;
+      transform: translateY(-0.1rem);
+    }
+    @include respond(smalltab) {
+      width: 92vw; // 94 later
+      margin-left: 0;
+      margin-right: 0;
+      transform: translateY(1rem);
+    }
+    @include respond(phone) {
+      width: 93vw; // 94 later
+      
+    }
+    @include respond(smallPhone) {
+      width: 94vw; // 94 later
+      
+    }
+
+    &-cancel {
+      width: 6.6rem;
+      height: 6.6rem;
+      margin-left: 1rem;
+      font-size: 4rem;
+      background: $main-blue;
+      cursor: pointer;
+      border: solid 0px;
+      color: $white;
+      @include respond(smalltab) {
+        width: 92vw; //93 later
+        margin-left: 0;
+        margin-right: 0;
+        transform: translateY(2rem);
+      }
+      @include respond(phone) {
+        width: 93vw; //93 later
+        
+      }
+    }
+    &-cancel:hover {
+      color: white;
+    }
+  }
+  &__btn:hover {
+    color: white;
+  }
+}

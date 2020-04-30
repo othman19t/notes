@@ -1,0 +1,38 @@
+.logout {
+  &__btn {
+    font-size: 2.7rem;
+    background: transparent;
+    border: solid 0px;
+    color: $white;
+    cursor: pointer;
+  }
+  &__btn:hover {
+    color: white;
+  }
+}
+.header {
+  width: 80vw;
+  margin-left: 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include respond(dis) {
+    width: 96vw;
+    margin-left: 1vw;
+  }
+
+  &__txt {
+    @include respond(smalltab) {
+      font-size: 3rem;
+    }
+  }
+
+  &__con {
+    width: 100vw;
+    height: 10rem;
+    background: $second-blue;
+    margin-bottom: 1rem;
+    color: $white;
+    font-size: 2rem;
+  }
+}

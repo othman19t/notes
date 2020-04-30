@@ -1,0 +1,55 @@
+.login {
+  &__modle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(-15rem);
+    @include respond(bigDis) {
+      transform: translateY(0rem);
+    }
+    
+  }
+  &__txt {
+    font-size: 4rem;
+    color: $white;
+    @include respond(smalltab) {
+      font-size: 2.5rem;
+    }
+    @include respond(bigPhone) {
+      font-size: 2rem;
+    }
+  }
+  &__input {
+    width: 49vw;
+    height: 6rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    padding-left: 1vw;
+    @include respond(bigPhone) {
+      width: 90vw;
+    }
+  }
+  &__btn {
+    width: 50.3vw;
+    height: 6.6rem;
+    margin-bottom: 1rem;
+    background: $main-blue;
+    border: solid 0px;
+    font-size: 3rem;
+    cursor: pointer;
+    color: $white;
+    @include respond(bigPhone) {
+      width: 92vw;
+    }
+  }
+  &__btn:hover {
+    color: white;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
