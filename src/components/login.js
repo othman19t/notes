@@ -41,7 +41,7 @@ class LogIn extends Component {
           <h1 className="login__txt">
             Login and start using your favorite notes app{" "}
           </h1>
-          <p> {this.state.error} </p>
+          <p className="login__error"> {this.state.error} </p>
           <form className="login__form">
             <input
               type="email"

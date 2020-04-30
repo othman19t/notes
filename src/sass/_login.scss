@@ -8,7 +8,6 @@
     @include respond(bigDis) {
       transform: translateY(0rem);
     }
-    
   }
   &__txt {
     font-size: 4rem;
@@ -51,5 +50,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  &__error {
+    font-size: 2rem;
+    color: red;
   }
 }
