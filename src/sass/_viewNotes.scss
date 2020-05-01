@@ -1,57 +1,31 @@
 .view {
   &__notes {
-    width: 80vw;
-    margin-left: 10vw;
+    width: 100%;
+    
     background: $main-blue;
     font-size: 2.5rem;
     border-bottom: solid 0.1px white;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     color: $white;
     min-height: 5rem;
-    padding: 1rem;
-    @include respond(dis) {
-      width: 100vw;
-      margin-left: 0rem;
+    padding: 1rem 0;
+  }
+  &__note {
+    width: 80%;
+    @include respond(smalltab) {
+      width: 70%;
     }
   }
   &__btns {
-    //background: red;
-    min-width: 9vw;
-    transform: translateX(5rem); // media
-    margin-left: 4rem;
-    @include respond(bigDis) {
-      min-width: 10vw;
-    }
-    @include respond(dis) {
-      min-width: 14vw;
-    }
-    @include respond(smallDis) {
-      min-width: 15.5vw;
-    }
-    @include respond(bigTab) {
-      min-width: 18vw;
-    }
-    @include respond(tab) {
-      min-width: 21vw;
-      margin-right: 1rem;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
     @include respond(smalltab) {
-      min-width: 22vw;
-      margin-right: 6vw;
-    }
-    @include respond(bigPhone) {
-      min-width: 26vw;
-      margin-right: 8vw;
-    }
-    @include respond(phone) {
-      min-width: 35vw;
-      margin-right: 8.5vw;
-    }
-    @include respond(smallPhone) {
-      min-width: 43vw;
-      margin-right: 9vw;
+      width: 20%;
+      
     }
   }
   &__btn {
@@ -60,6 +34,10 @@
     font-size: 2rem;
     color: $white;
     cursor: pointer;
+    @include respond(smalltab) {
+      font-size: 1.6rem;
+      
+    }
   }
   &__btn:hover {
     color: white;

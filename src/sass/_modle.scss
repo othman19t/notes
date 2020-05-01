@@ -1,5 +1,5 @@
 .modle {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background: $second-blue;
   position: absolute;
@@ -13,24 +13,26 @@
     flex-direction: column;
   }
   &__form {
+    width: 60%;
+
     @include respond(smalltab) {
       display: flex;
       flex-direction: column;
     }
   }
   &__input {
-    width: 60vw;
+    width: 60%;
     height: 6rem;
     font-size: 2rem;
-    padding-left: 1rem;
-    @include respond(smalltab) {
-      width: 90vw;
-    }
+    
+    // @include respond(smalltab) {
+    //   width: 90vw;
+    // }
   }
   &__btn {
-    width: 20vw;
+    width: 38%;
     height: 6.6rem;
-    margin-left: 1rem;
+    margin-left: 1%;
     transform: translateY(0.3rem);
     background: $main-blue;
     font-size: 3rem;

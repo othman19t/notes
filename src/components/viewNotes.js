@@ -90,12 +90,13 @@ class ViewNotes extends Component {
           this.state.notes.map((note) => (
             <div className="view__notes" key={note[0]}>
               <div
+              className="view__note"
                 id={note[0]}
                 onDoubleClick={() => this.editNote(note[0])}
                 key={note[0]}
                 defaultValue={note[0]}
               >
-                {note[1].note}{" "}
+                {note[1].note}
               </div>
               <div className="view__btns">
                 <button

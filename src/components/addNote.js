@@ -14,7 +14,7 @@ const addItem = (e) => {
 const AddData = () => {
   return (
     <div className="add">
-      <form onSubmit={addItem}>
+      <form className="add__form" onSubmit={addItem}>
         <input
           className="add__input"
           placeholder="Type a note"
