@@ -3,14 +3,18 @@
   width: 100%;
   height: 12rem;
   padding: 0 0 0 10%;
+  overflow-x: hidden;
   @include respond(smalltab) {
     height: 20rem;
+    padding: 0;
   }
   &__form {
     width: 100%;
     @include respond(smalltab) {
+      width: 100%;
       display: flex;
       flex-direction: column;
+      align-items: center;
     }
   }
   &__input {
@@ -56,6 +60,7 @@
     @include respond(smalltab) {
       width: 80.3%; //here
       margin-left: 0;
+
     }
    
   }
