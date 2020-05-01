@@ -9,25 +9,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  @include respond(smalltab) {
+  @include respond(bigTab) {
     flex-direction: column;
   }
   &__form {
     width: 60%;
-
-    @include respond(smalltab) {
+    @include respond(bigTab) {
+      width: 100%;
       display: flex;
       flex-direction: column;
+      align-items: center;
     }
   }
   &__input {
     width: 60%;
     height: 6rem;
     font-size: 2rem;
-    
-    // @include respond(smalltab) {
-    //   width: 90vw;
-    // }
+    @include respond(bigTab) {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 0.5rem;
+    }
   }
   &__btn {
     width: 38%;
@@ -40,26 +43,9 @@
     cursor: pointer;
     border: solid 0px;
     @include respond(bigTab) {
-      font-size: 2.5rem;
-      transform: translateY(0.2rem);
-    }
-    @include respond(tab) {
-      font-size: 2.1rem;
-      transform: translateY(-0.1rem);
-    }
-    @include respond(smalltab) {
-      width: 92vw; // 94 later
+      width: 90.5%;
       margin-left: 0;
-      margin-right: 0;
-      transform: translateY(1rem);
-    }
-    @include respond(phone) {
-      width: 93vw; // 94 later
-      
-    }
-    @include respond(smallPhone) {
-      width: 94vw; // 94 later
-      
+      margin-bottom: 1rem;
     }
 
     &-cancel {
@@ -71,15 +57,9 @@
       cursor: pointer;
       border: solid 0px;
       color: $white;
-      @include respond(smalltab) {
-        width: 92vw; //93 later
+      @include respond(bigTab) {
+        width: 90.5%;
         margin-left: 0;
-        margin-right: 0;
-        transform: translateY(2rem);
-      }
-      @include respond(phone) {
-        width: 93vw; //93 later
-        
       }
     }
     &-cancel:hover {
